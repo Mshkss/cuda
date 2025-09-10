@@ -1,7 +1,7 @@
 #include <cstdio>
 
 // CUDA kernel — выполняется на GPU
-__global__ void cuda_hello() { printf("Hello World from GPU!\n"); }
+__global__ void cuda_hello() { printf("Hello World from GPU1!\n"); }
 
 int main() {
     // Запуск kernel: 1 блок, 1 поток
@@ -17,6 +17,6 @@ int main() {
         return 1;
     }
 
-    printf("Hello World from CPU!\n");
+    printf("Hello World from CPU1!\n");
     return 0;
 }
