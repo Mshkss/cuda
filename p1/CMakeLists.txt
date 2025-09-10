@@ -4,6 +4,10 @@ project(cuda_scalar_product LANGUAGES CXX CUDA)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CUDA_STANDARD 17)
 
+# Указываем архитектуру GPU для Colab
+set(CMAKE_CUDA_ARCHITECTURES 75)
+
+
 # исходники
 set(SOURCES
     src/main.cu
